@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class noise : MonoBehaviour
+public class colour : MonoBehaviour
 {
+    public SpriteRenderer spriteRenderer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,5 +13,9 @@ public class noise : MonoBehaviour
     void Update()
     {
         
+    }
+    public void PickRandomColor()
+    {
+        spriteRenderer.color = Random.ColorHSV();
     }
 }
