@@ -13,7 +13,9 @@ public class spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        Vector3 cursor = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        cursor.z = 0;
+        transform.position = cursor;
         if (Mouse.current.leftButton.isPressed)
         {
             Instantiate(prefab, transform.position, transform.rotation);
