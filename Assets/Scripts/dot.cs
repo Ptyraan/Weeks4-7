@@ -14,4 +14,9 @@ public class dot : MonoBehaviour
     {
         
     }
+
+    public void SetScale(float scale)
+    {
+        transform.localScale = Vector3.one * scale;
+    }
 }
