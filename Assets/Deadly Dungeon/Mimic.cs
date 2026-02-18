@@ -12,7 +12,7 @@ public class Mimic : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        spriteRenderer.sprite = closed;
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class Mimic : MonoBehaviour
         if (trapped)
         {
             player.transform.position = transform.position;
-            if (Keyboard.current.anyKey.wasPressedThisFrame)
+            if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
                 poise -= 1;
             }
