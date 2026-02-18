@@ -15,6 +15,7 @@ public class dot : MonoBehaviour
         
     }
 
+    // literally just the scale slider, that's it.
     public void SetScale(float scale)
     {
         transform.localScale = Vector3.one * scale;
