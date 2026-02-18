@@ -41,6 +41,7 @@ public class Mimic : MonoBehaviour
              && Mouse.current.leftButton.wasPressedThisFrame)
             {
                 trapped = true;
+                poise = 20;
                 spriteRenderer.sprite = open;
             }
         }
