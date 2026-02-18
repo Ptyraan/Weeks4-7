@@ -8,7 +8,7 @@ public class spawner : MonoBehaviour
     public GameObject prefab;
     public GameObject spawnedPaint;
     public SpriteRenderer spriteRenderer;
-    public SpriteRenderer penRenderer;
+    SpriteRenderer penRenderer;
     public SpriteRenderer previewRenderer;
     public List<GameObject> paint;
     public int count = 0;
